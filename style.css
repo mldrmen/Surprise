@@ -1,0 +1,59 @@
+body {
+    background: #6c63ff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to start from the top */
+    height: 100vh;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+.card {
+    background: #fdfdfd;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex; /* Flexbox for side-by-side layout */
+    flex-direction: row; /* Image on the left, text on the right */
+    align-items: flex-start; /* Align items at the top */
+    gap: 2em; /* Space between image and text */
+    padding: 1.5em;
+    overflow-y: auto;
+}
+
+.card img.birthday {
+    width: 45%; /* Image takes 45% of the width */
+    max-width: 450px; /* Limit maximum width */
+    object-fit: contain; /* Maintain image aspect ratio */
+    border-radius: 5px; /* Optional: Round corners for aesthetics */
+}
+
+.text {
+    width: 55%; /* Text takes the remaining space */
+    color: #333;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.text h1 {
+    font-size: 2rem;
+    color: #6c63ff;
+    margin-bottom: 1em;
+}
+
+.muted {
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: 1em;
+}
+
+audio {
+    margin-top: 1.5em;
+    width: 100%;
+    max-width: 450px;
+    display: block; /* Ensure it stays below the text */
+}
+
